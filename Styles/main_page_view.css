@@ -1,7 +1,23 @@
 
 
+@font-face {
+    font-family: 'Yekan';
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.woff') format('woff'),
+    url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Yekan', serif;
+}
+
 .store_text {
-    font-size: 1.5vw;
+    /*font-size: 1.5vw;*/
+    font-size: 1.2em;
+    /*font-size: 120%;*/
     color: cadetblue;
     font-weight: bold;
 }
@@ -12,16 +28,18 @@
     right: 0;
     top: 0;
     width: 100%;
+    height: 65px;
     background-color: white;
 }
 
 .navbar a {
+    font-size: 1.2vw;
     float: right;
     display: block;
-    font-size: 1.2vw;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    /*padding: 14px 16px;*/
+    padding: 14px 25px;
     text-decoration: none;
 }
 
@@ -38,15 +56,17 @@
     Design a button for submitting the github username
 */
 .dropdown .dropbtn {
+    font-size: 1.1vw;
     background-color: white;
     display:inline-block;
     padding:0.3em 1.2em;
     margin:0 0.1em 0.1em 0;
-    border:0.2em solid orange;
+    border:0.2em solid rgb(246,190,0);
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    /*font-family:'Roboto',sans-serif;*/
+    font-family: 'Yekan', serif;
     font-weight:300;
     color:black;
     /*background-color: cadetblue;*/
@@ -54,12 +74,12 @@
     text-align:center;
     transition: all 0.2s;
     /*width: 50%;*/
-    font-size: 1.2vw;
     /*cursor: pointer;*/
 }
 
 .navbar a:hover {
     background-color: rgb(220, 220, 220);
+    color: cadetblue;
     border-radius:1em;
 }
 
@@ -69,11 +89,12 @@
 /*}*/
 
 .dropbtn:hover {
-    background-color: yellow;
+    background-color: rgb(246,190,0);
     /*border-radius:2em;*/
 }
 
 .dropdown-content {
+    font-size: 1.1vw;
     display: none;
     position: relative;
     border-radius:1em;
