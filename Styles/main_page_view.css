@@ -238,6 +238,7 @@ body {
  .search-label {
      /*flex: 40px;*/
      flex: 30px;
+     direction: rtl;
      color: white;
      font-size: 2vw;
      /*border: 1px solid blue;*/
