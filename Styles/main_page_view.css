@@ -270,17 +270,22 @@ body {
     /*font-size: 0.7vw;*/
 }
 
-/*.btn-part {*/
-/*    flex: 33%;*/
-/*    !*border: 1px solid blue;*!*/
+/*
+    Design the partition of the search button
+ */
+.btn-part {
+    flex: 33%;
+    width: 10%;
+    /*border: 1px solid blue;*/
 
-/*}*/
+}
 
 /*
     Design of button placed in hero header
  */
 .search-btn {
     font-size: 1.1vw;
+    width: 100%;
     /*background-color: rgba(255, 192, 8, 0.99);*/
     background-color: rgb(255, 200, 10);
     display:block;

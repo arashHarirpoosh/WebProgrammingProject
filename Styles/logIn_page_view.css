@@ -7,18 +7,20 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(247, 247, 247);
+    /*border: 1px solid red;*/
+
 }
 
 .flex-login-title {
     /*flex: 20%;*/
+    font-size: 1.5vw;
     color: rgb(14, 186, 197);
     margin: 15px;
     /*border: 1px solid red;*/
 
 }
 
-.flex-parts {
-    /*flex: 40%;*/
+.flex-parts-login {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -27,6 +29,13 @@
     /*border: 1px solid red;*/
     direction: rtl;
 
+}
+
+.flex-form-btn {
+    justify-content: center;
+    margin: 7px;
+    width: 10%;
+    /*border: 1px solid red;*/
 }
 
 .flex-text-area {
@@ -71,3 +80,39 @@
     border-radius: 0.25em;
 
 }
+
+/*
+    Design flex box for login form
+ */
+.flex-main-box {
+    justify-content: center;
+    /*height: 50%;*/
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid blue;*/
+
+}
+
+
+
+/*
+    In this part the size and location of the grid and flex layout will be changed if the width of the page
+    is larger than 700px
+ */
+/*@media only screen and (min-width: 700px) {*/
+/*    .flex-parts {*/
+/*        width: 30%;*/
+/*        height: 5%;*/
+/*        border: 1px solid red;*/
+
+/*    }*/
+/*    .flex-text-address {*/
+/*        width: 30%;*/
+/*        height: 10%;*/
+/*        !*border: 1px solid red;*!*/
+
+/*    }*/
+/*}*/

@@ -1,0 +1,207 @@
+
+/*
+    Design partition of the entire page
+ */
+.flex-content {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*height: 50%;*/
+    background-color: rgb(247, 247, 247);
+    /*border: 1px solid red;*/
+
+}
+
+/*
+    Design flex box for signup form
+ */
+.flex-main-box {
+    justify-content: center;
+    /*height: 50%;*/
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid blue;*/
+
+}
+
+/*
+    Design of the title part of the form
+ */
+.flex-login-title {
+    /*flex: 10%;*/
+    font-size: 1.5vw;
+    color: rgb(14, 186, 197);
+    margin: 15px;
+    /*border: 1px solid red;*/
+
+}
+
+/*
+    Design each item of the form
+ */
+.flex-parts-signup {
+    /*flex: 20%;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /*margin: 7px;*/
+    width: 70%;
+    /*border: 1px solid red;*/
+    direction: rtl;
+
+}
+
+/*
+    Design button of the form
+ */
+.flex-form-btn {
+    justify-content: center;
+    margin: 7px;
+    width: 10%;
+    /*border: 1px solid red;*/
+}
+
+/*
+    Design inner partition of each row
+ */
+.flex-text-area {
+    font-size: 1.2vw;
+    flex: 50%;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    /*border: 1px solid red;*/
+}
+
+/*
+    Design of the address part of the form
+ */
+.flex-text-address {
+    height: 8vw;
+    /*height: 40px;*/
+    font-size: 1.2vw;
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    width: 50%;
+    /*border: 1px solid red;*/
+    /*direction: rtl;*/
+    /*height: 100%;*/
+
+}
+
+/*
+    Design partition of the address input text
+ */
+.address-text-input-part {
+    font-size: 1.2vw;
+    flex: 88%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    padding-right: 4%;
+    border: white;
+    border-radius: 0.25em;
+
+}
+
+/*
+    Design of the labels beside address text input
+ */
+.address-input-labels {
+    flex: 12%;
+    height: 100%;
+    font-size: 1.2vw;
+    /*border: blueviolet;*/
+    display: flex;
+    background-color: rgb(14, 186, 197);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    /*border: black;*/
+
+}
+
+
+/*
+    Design partition of the input text
+ */
+.text-input-part {
+    font-size: 1.2vw;
+    flex: 70%;
+    height: 70%;
+    /*border: 1px solid red;*/
+    padding-right: 4%;
+    border: white;
+    border-radius: 0.25em;
+
+}
+
+/*
+    Design of the labels beside text input
+ */
+.input-labels {
+    flex: 20%;
+    height: 70%;
+    font-size: 1.2vw;
+    /*border: blueviolet;*/
+    display: flex;
+    background-color: rgb(14, 186, 197);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    /*border: black;*/
+
+}
+
+/*
+    Design partition of each text inputs
+ */
+.flex-parts-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 7px;
+    width: 40%;
+    /*border: 1px solid red;*/
+    direction: rtl;
+
+}
+
+
+
+/*
+    In this part the size and location of the grid and flex layout will be changed if the width of the page
+    is larger than 700px
+ */
+/*@media only screen and (min-width: 700px) {*/
+/*    .flex-parts-signup {*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        flex-direction: row;*/
+/*        margin: 7px;*/
+/*        width: 30%;*/
+/*        border: 1px solid red;*/
+/*        direction: rtl;*/
+
+/*    }*/
+/*    .flex-text-address {*/
+/*        width: 30%;*/
+/*        height: 10%;*/
+/*        !*border: 1px solid red;*!*/
+
+/*    }*/
+/*}*/
