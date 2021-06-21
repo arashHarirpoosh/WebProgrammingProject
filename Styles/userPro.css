@@ -1,0 +1,84 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+}
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 90%;
+}
+
+h4{
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.toggleButton {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: 25px;
+    height: 30px;
+}
+
+.form-check{
+    border: none;
+    width: 100px;
+    height: 90%;
+
+}
+
+.rightBtn{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.leftBtn{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-check:focus {
+    display: inline-block;
+    color:rgb(138, 138, 138);
+    background-color: rgb(238, 238, 238) ;
+}
+
+#tableContainer{
+    margin-top: 25px;
+    overflow-y: auto;
+    background-color: white;
+    width: 80%;
+}
+
+table {
+    direction: rtl;
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+
+td {
+    direction: rtl;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 8px;
+}
+
+th{
+    direction: rtl;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 8px;
+    border-collapse: collapse;
+}
