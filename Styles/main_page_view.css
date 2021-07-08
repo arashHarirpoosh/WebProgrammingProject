@@ -1,4 +1,4 @@
-
+*{box-sizing: border-box}
 
 @font-face {
     font-family: 'Yekan';
@@ -349,47 +349,191 @@ body {
 }
 
 /*
-    Design the partition of the part which product cards placed
- */
-.flex-item-product {
-    flex: 75%;
-    margin: 7.5px;
-    background-color: white;
-    border: 1px solid orchid;
-
-}
-
-/*
     Design the partition of the part which category and price filter placed
  */
-.flex-item-filters {
-    flex: 25%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: 7.5px;
-    /*background-color: white;*/
-    border: 1px solid orchid;
-}
 
-/*
-    Design the partition of the category filter
- */
-.flex-category-part {
-    flex: 60%;
-    margin: 7.5px;
-    background-color: white;
-    border: 1px solid orchid;
-
-}
 
 /*
     Design the partition of the price filter
  */
 .flex-set-price-part {
-    flex: 40%;
+    flex: 30%;
     margin: 7.5px;
     background-color: white;
     border: 1px solid orchid;
 
+}
+
+/*---------------------------------------------------FilterBox_Part---------------------------------------------------*/
+.flex-item-filters{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border: solid yellow;
+    padding: 0;
+    direction: rtl;
+
+}
+#filtersContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid #d5cece;
+    border-radius: .2em;
+    box-shadow: 20px 20px 200px 1px #d5cece;
+    height: 70%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#filtersTitle{
+    border-bottom: solid #d5cece 1px;
+    width: 100%;
+    text-align: right;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.container{
+    border: solid red;
+    direction: ltr;
+    overflow-y: scroll;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.script {
+    display: block;
+    position: relative;
+    text-align: right;
+    padding-right: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+/* creating a custom checkbox based on demand */
+.w3docs {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: solid #d5cece 1px;
+    border-radius:50%;
+}
+/* specify the background color to be shown when hovering over checkbox */
+.script:hover input ~ .w3docs {
+    background-color: orange;
+}
+
+/* specify the background color to be shown when checkbox is checked */
+.script input:checked ~ .w3docs {
+    background-color: #0664bb;
+
+}
+/* checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.w3docs:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* display checkmark when checked */
+.script input:checked ~ .w3docs:after {
+    display: block;
+}
+/* styling the checkmark using webkit */
+/* creating a square to be the sign of checkmark */
+.script .w3docs:after {
+    left: 6px;
+    bottom: 6px;
+    border-radius:50%;
+
+}
+
+input[type=checkbox]:checked + label {
+    color: red;
+    font-style: normal;
+}
+
+/*---------------------------------------------------FilterBox_Part---------------------------------------------------*/
+/*
+    Design the partition of the part which product cards placed
+ */
+.flex-item-product {
+    display: flex;
+    flex: 75%;
+    margin: 7.5px;
+    background-color: white;
+    border: 2px solid orchid;
+    direction: rtl;
+}
+
+.proBox{
+    border: solid;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* vertically center*/
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 0 15px;
+    box-shadow: 20px 20px 200px 1px #d5cece;
+    background-color: white;
+    margin-left: 15px;
+}
+
+div.imageDetails{
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 4;
+    width: 100%;
+    /*border: solid red;*/
+}
+
+.productImage{
+    width: 100%;
+    height: 130px;
+}
+
+div.details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+div.priceRow{
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #d5cece;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+
+.btn_price_row {
+    background-color: rgb(0, 157, 255);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 6px 10px;
+    box-shadow: 2px 8px 30px -3px rgb(0, 157, 255);
 }
